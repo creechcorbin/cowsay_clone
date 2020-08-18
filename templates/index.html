@@ -1,0 +1,11 @@
+<div class="container">
+    <form action="" method='POST'>
+        {% csrf_token %}
+        <h1>Type & Hit Submit to Make Cow Talk!!</h1>
+        <a href='/'>Home</a> <a href='/history'>Most Recent</a>
+        <br>
+        {{ form }}
+        <pre>{{ output }}</pre>
+        <input type='submit' value='Submit'>
+    </form>
+</div>

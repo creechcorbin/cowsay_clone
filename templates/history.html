@@ -1,0 +1,8 @@
+<!-- https://stackoverflow.com/questions/2962203/how-to-retrieve-the-first-10-elements-in-a-template-variable -->
+<!-- Referenced link for slicing -->
+<div class='container'>
+    <h1> Most Recent </h1>
+    {% for input in most_recent|slice:'10' %}
+        <p>{{ input.text }}</p>
+    {% endfor %}
+</div>
